@@ -22,6 +22,11 @@ function changeWidthHeight() {
     let randomIndex = Math.floor(Math.random() * 63);
     let selectedColor = colorsList[randomIndex]
     boxDiv.style.backgroundColor = selectedColor;
+    
+    let randomX = Math.floor(Math.random() * (900 - 50 + 1)) + 50;
+    let randomY = Math.floor(Math.random() * (900 - 50 + 1)) + 50;
+
+    boxDiv.style.transform = `translate(${randomX}px, ${randomY}px)`;
 
 }
 
